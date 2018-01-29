@@ -1,5 +1,18 @@
 // 7. At the top of the `liri.js` file, write the code you need to grab the data from keys.js. Then store the keys in a variable.
 
+var Twit = require('twitter');
+
+var config = require('./keys.js');
+ 
+var Twitter  = new Twit(config);
+
+
+var params = {screen_name: 'nodejs'};
+client.get('statuses/user_timeline', params, function(error, tweets, response) {
+  if (!error) {
+    console.log(tweets);
+  }
+});
 // 8. Make it so liri.js can take in one of the following commands:
 
 //    * `my-tweets`
