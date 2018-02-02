@@ -4,7 +4,8 @@ var Twit = require('twitter');
 
 var config = require('./keys.js');
  
-var Twitter  = new Twit(config);
+
+var client  = new Twit(config);
 
 
 var params = {screen_name: 'nodejs'};

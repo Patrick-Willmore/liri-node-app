@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Patrick-Willmore/liri-node-app#readme",
   "dependencies": {
     "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "twitter": "^1.7.1"
   }
 }
